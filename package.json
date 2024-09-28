@@ -1,0 +1,25 @@
+{
+  "name": "lichessencrypter",
+  "version": "1.0.0",
+  "description": "Lichess bot account that encripts files/messages in chess games",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psikoo/lichessEncrypter.git"
+  },
+  "author": "psikoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psikoo/lichessEncrypter/issues"
+  },
+  "homepage": "https://github.com/psikoo/lichessEncrypter#readme",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "lichessencrypter": "file:"
+  }
+}

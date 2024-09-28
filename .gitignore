@@ -1,3 +1,7 @@
+# Custom
+/output/generated.pgn
+/scr/assets/game.id
+
 # Logs
 logs
 *.log
