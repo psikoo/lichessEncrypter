@@ -14,5 +14,5 @@ let sanitizedGameData = sanitizeGameData(gameData);
 let message = decodeMessage(sanitizedGameData);
 console.log("> downloading PGN [https://lichess.org/"+id+"]:");
 console.log("--> mode detected: "+gameMode);
-console.log("--> game data: "+sanitizedGameData);
+//console.log("--> game data: "+sanitizedGameData);
 console.log("--> decoded message: "+message);

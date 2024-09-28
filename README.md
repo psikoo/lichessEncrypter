@@ -3,9 +3,8 @@
 
 # Usage
 npm install
-create .env file
-    ETOKEN="YOURTOKEN"
-    DTOKEN="YOURTOKEN"
-    API="https://lichess.org"
-    ENCRYPTERID="USERID"
-    DECRYPTERID="USERID"
+.env >
+ETOKEN="TOKEN"
+DTOKEN="TOKEN"
+URL="https://lichess.org"
+API="https://lichess.org/api"
