@@ -1,5 +1,4 @@
 @echo off
-
 set mode=%1
 set content=%2
 node .\scr\generatePGN.js %mode% %content%

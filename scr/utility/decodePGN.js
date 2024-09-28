@@ -21,18 +21,16 @@ export function decodeMessage(data) {
         binaryArray[i] = parseInt(binaryArray[i], 2);
     }
     message = uintToString(binaryArray);
-    console.log(message);
-
     return message;
 }
 
 function divideString(str, size) {
-    const numChunks = Math.ceil(str.length / size)
-    const chunks = new Array(numChunks)
+    const numChunks = Math.ceil(str.length / size);
+    const chunks = new Array(numChunks);
     for (let i = 0, o = 0; i < numChunks; ++i, o += size) {
-      chunks[i] = str.substr(o, size)
+      chunks[i] = str.substr(o, size);
     }
-    return chunks
+    return chunks;
 }
 
 function uintToString(binaryArray) {
