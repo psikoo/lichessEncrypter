@@ -1,4 +1,0 @@
-implement create more games (limit of 300 moves per game)
-file to bin, and back //DO NOT DO IMG, there is a limit of 29 bytes per game :c
-usage of mode detected
-get game id from cmd instead of file

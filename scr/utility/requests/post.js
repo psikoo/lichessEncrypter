@@ -1,10 +1,10 @@
 import axios from "axios";
 import fs from "fs";
 
-import { botToken } from './../botToken.js';
+import 'dotenv/config';
 
-export async function simpleTextPost(bot, url, text) {
-    let token = botToken(bot);
+export async function simpleTextPost(url, text) {
+    let token = process.env.TOKEN;
     let headersList = {
         "Accept": "*/*",
         "Authorization": "Bearer "+token,
@@ -22,8 +22,8 @@ export async function simpleTextPost(bot, url, text) {
     return response.data;
 };
 
-export async function postPGN(bot, url, file) {
-    let token = botToken(bot);
+export async function postPGN(url, file) {
+    let token = process.env.TOKEN;
     let headersList = {
         "Accept": "*/*",
         "Content-Type": "application/x-www-form-urlencoded",

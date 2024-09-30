@@ -4,7 +4,6 @@
 # Usage
 npm install
 .env >
-ETOKEN="TOKEN"
-DTOKEN="TOKEN"
+TOKEN="TOKEN"
 URL="https://lichess.org"
 API="https://lichess.org/api"

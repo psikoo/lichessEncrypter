@@ -4,12 +4,6 @@ export function messageToPGN(message) {
     return output;
 }
 
-export function fileToPGN(file) {
-    let output = fileToBinary(file);
-    output = binaryToPGN(output);
-    return output;
-}
-
 export function messageToBinary(string) {
     let output = "";
     for (let i = 0; i < string.length; i++) {
@@ -19,12 +13,6 @@ export function messageToBinary(string) {
         let paddedBinary = "0".repeat(padding) + stringBinary;
         output += paddedBinary;
     }
-    return output;
-}
-
-export function fileToBinary(file) {
-    let output = "IMPLEMENT fileToBinary";
-    // TODO
     return output;
 }
 

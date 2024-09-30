@@ -1,9 +1,9 @@
 import axios from "axios";
 
-import { botToken } from './../botToken.js';
+import 'dotenv/config';
 
-export async function simpleGet(bot, url) {
-    let token = botToken(bot);
+export async function simpleGet(url) {
+    let token = process.env.TOKEN;
     let headersList = {
         "Accept": "*/*",
         "Authorization": "Bearer "+token,
@@ -18,8 +18,8 @@ export async function simpleGet(bot, url) {
     return response.data;
 };
 
-export async function getPGN(bot, url, id) {
-    let token = botToken(bot);
+export async function getPGN(url, id) {
+    let token = process.env.TOKEN;
     let headersList = {
         "Accept": "*/*",
         "Authorization": "Bearer "+token,
