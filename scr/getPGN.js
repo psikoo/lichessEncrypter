@@ -6,7 +6,10 @@ import { getPGN } from "./utility/requests/get.js";
 import { sanitizeGameData } from "./utility/sanitizeGameData.js";
 import { decodeMessage } from "./utility/decodePGN.js";
 
-let id = fs.readFileSync("./output/game.id", "utf8");;
+let id = fs.readFileSync("./output/game.id", "utf8");
+if(process.argv[2] == "id") {
+    id = process.argv[3];
+}
 let game = await getPGN("/game/export", id);
 let gameMode = game.substr(28,game.indexOf('"'));
 let gameData = game.substr(game.indexOf('1.'));
