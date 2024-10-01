@@ -3,7 +3,7 @@ import fs from "fs";
 
 import 'dotenv/config';
 
-export async function simpleTextPost(url, text) {
+export async function simpleTextPost(url, text) { //Posts a text to a url
     let token = process.env.TOKEN;
     let headersList = {
         "Accept": "*/*",
@@ -22,7 +22,7 @@ export async function simpleTextPost(url, text) {
     return response.data;
 };
 
-export async function postPGN(url, file) {
+export async function postPGN(url, file) { //Posts a file to a url, as a URI encoded body
     let token = process.env.TOKEN;
     let headersList = {
         "Accept": "*/*",

@@ -1,10 +1,10 @@
-export function messageToPGN(message) {
+export function messageToPGN(message) { //Converts a message to a PGN
     let output = messageToBinary(message);
     output = binaryToPGN(output);
     return output;
 }
 
-export function messageToBinary(string) {
+export function messageToBinary(string) { //Converts a message to a binary
     let output = "";
     for (let i = 0; i < string.length; i++) {
         let stringBinary = string[i].charCodeAt(0).toString(2);
@@ -16,7 +16,7 @@ export function messageToBinary(string) {
     return output;
 }
 
-export function binaryToPGN(binary) {
+export function binaryToPGN(binary) { //Converts binary to a PGN
     let output = ""; 
     let offset = 6;
     let bishopCounter = 0;

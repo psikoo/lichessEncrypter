@@ -2,7 +2,7 @@ import axios from "axios";
 
 import 'dotenv/config';
 
-export async function simpleGet(url) {
+export async function simpleGet(url) { //Gets a URL
     let token = process.env.TOKEN;
     let headersList = {
         "Accept": "*/*",
@@ -18,7 +18,7 @@ export async function simpleGet(url) {
     return response.data;
 };
 
-export async function getPGN(url, id) {
+export async function getPGN(url, id) { //Gets a pgn for the given id
     let token = process.env.TOKEN;
     let headersList = {
         "Accept": "*/*",
