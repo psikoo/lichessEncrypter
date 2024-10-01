@@ -15,7 +15,6 @@ This script runs with Node.js and npm. To runn the script you must install Node.
 
 - Create a ".env" file on the base the directry of the script and add the follwing contents to it:
 ``` env
-.env >
 TOKEN="TOKEN"
 URL="https://lichess.org"
 API="https://lichess.org/api"
