@@ -13,7 +13,7 @@ This script runs with Node.js and npm. To runn the script you must install Node.
 
 **Before running:**
 
-- Create a ".env" file on the base the directry of the script and add the follwing contents to it:
+- Create a ".env" file on the base the directory of the script and add the following contents to it:
 ``` env
 TOKEN="TOKEN"
 URL="https://lichess.org"
