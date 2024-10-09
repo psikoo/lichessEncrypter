@@ -1,7 +1,7 @@
 
 # LichessEncrypter
 
-LichessEncrypter is a small JavaScript script that converts a short string (29 characters maximum) to chess moves in PGN. The script also automatically uploads the PGN file to [Lichess.org](https://lichess.org/), and can also donwload and decrypt(decode, the strings arent really encrypted just encoded (but the name is cooler this way)) PGN files from [Lichess.org](https://lichess.org/).
+LichessEncrypter is a small JavaScript script that converts a short string (29 characters maximum) to chess moves in PGN. The script also automatically uploads the PGN file to [Lichess.org](https://lichess.org/), and can also download and decrypt(decode, the strings aren't really encrypted just encoded (but the name is cooler this way)) PGN files from [Lichess.org](https://lichess.org/).
 
 Example of a message encrypted in a PGN file, [Hello world!](https://lichess.org/Zzsjdp42).
 
@@ -9,17 +9,17 @@ Example of a message encrypted in a PGN file, [Hello world!](https://lichess.org
 
 **Usage information:**
 
-This script runs with Node.js and npm. To runn the script you must install Node.js and npm.
+This script runs with Node.js and npm. To run the script you must install Node.js and npm.
 
 **Before running:**
 
-- Create a ".env" file on the base the directry of the script and add the follwing contents to it:
+- Create a ".env" file on the base the directory of the script and add the following contents to it:
 ``` env
 TOKEN="TOKEN"
 URL="https://lichess.org"
 API="https://lichess.org/api"
 ```
-- Get yout TOKEN [here](https://lichess.org/account/oauth/token).
+- Get your TOKEN [here](https://lichess.org/account/oauth/token).
 
 - You also need to install the needed dependencies by running the following command:
 
@@ -35,7 +35,7 @@ Generates a PGN for the given message, uploads it to [Lichess.org](https://liche
 .\start.cmd {mode} {message}
 ```
 
-The only abailable mode is "message" and {message} can be any 29 or less character string.
+The only available mode is "message" and {message} can be any 29 or less character string.
 
 ```bash
 .\start.cmd message "Hello world!"
